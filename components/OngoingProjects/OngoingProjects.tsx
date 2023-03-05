@@ -25,7 +25,7 @@ const OngoingProjects = () => {
                                     <h1 className='uppercase opacity-40 -rotate-12'>{each.title}</h1>
                                 </div>
                             ) : (
-                                <Image src={each.thumbnail} alt={each.title} width={250} height={190} className='w-full h-full object-cover' />
+                                <Image priority unoptimized src={each.thumbnail} alt={each.title} width={250} height={190} className='w-full h-full object-cover object-top' />
                             )
                         }
                     </div>
