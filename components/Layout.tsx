@@ -79,7 +79,9 @@ const Layout = ({ children, ...customMeta }: LayoutProps) => {
         )}
         <title key="title">{meta.title}</title>
       </Head>
-      <main>{children}</main>
+      <main className="layout-container">
+        {children}
+      </main>
     </>
   );
 };
