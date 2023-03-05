@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import { insightEps } from 'data/insightData'
+import { insightEps } from '@/components/InsightAPodcast/insightData'
 
 const InsightAPodcast = () => {
   return (
