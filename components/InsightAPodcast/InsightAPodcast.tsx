@@ -5,7 +5,7 @@ import { insightEps } from '@/components/InsightAPodcast/insightData'
 
 const InsightAPodcast = () => {
   return (
-    <div className='flex justify-between'>
+    <div className='flex md:justify-between flex-col md:flex-row gap-y-4'>
         <div className='flex-1'>
             <h1>INSIGHT A PODCAST</h1>
             <p>About insight a podcast.....</p>

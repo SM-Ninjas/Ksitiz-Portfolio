@@ -1,6 +1,7 @@
 import getConfig from "next/config";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Header from "./Header";
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -77,9 +78,16 @@ const Layout = ({ children, ...customMeta }: LayoutProps) => {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-        <title key="title">{meta.title}</title>
+        <title key="title">{'Ksitiz Devkota'}</title>
+
+        {/* fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"></link>
+        
       </Head>
       <main className="layout-container">
+        <Header />
         {children}
       </main>
     </>

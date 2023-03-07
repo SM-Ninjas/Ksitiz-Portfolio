@@ -39,6 +39,7 @@
 
   body {
     @apply text-dark bg-light;
+    font-family: "Cairo", sans-serif;
   }
 
   h1 {
@@ -59,9 +60,19 @@
   .radial-gradient {
     background: radial-gradient(50% 50% at 50% 50%, rgba(238, 238, 238, 0) 0%, #E4E4E4 100%);
   }
+  .overlay-gradient {
+    background: linear-gradient(-300deg, #e8e8e7 13.02%, rgba(255, 255, 255, 0) 82.43%);
+  }
   .hide-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     scrollbar-color: transparent transparent;
+  }
+  .color-overlay {
+    background-color: yellow;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
   }
 }

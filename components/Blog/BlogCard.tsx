@@ -18,7 +18,7 @@ const BlogCard = ({ blog }: any) => {
                     {blog?.content}
                 </p>
             </div>
-            <div className='absolute -top-16 right-8 w-72 h-72'>
+            <div className='absolute -top-16 right-8 w-32 h-32 md:w-72 md:h-72'>
                 <Image src='/images/blogs/temp.jpg' alt='author' unoptimized width={100} height={100} className='w-full h-full object-cover'/>
             </div>
         </div>
