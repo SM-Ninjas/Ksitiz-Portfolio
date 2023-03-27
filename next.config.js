@@ -16,4 +16,7 @@ module.exports = {
     locales: ['en-US'],
     defaultLocale: 'en-US',
   },
+  images: {
+    domains: ['firebasestorage.googleapis.com'],
+  }
 };

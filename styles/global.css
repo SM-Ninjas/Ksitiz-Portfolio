@@ -76,3 +76,8 @@
     -moz-text-fill-color: transparent;
   }
 }
+
+ul {
+  @apply list-disc;
+  @apply px-8
+}
